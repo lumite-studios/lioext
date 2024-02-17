@@ -1,1 +1,0 @@
-import{c as r,o as s}from"./app-Dtt03bQ2.js";/* empty css            */const _=(e,t)=>{const c=e.__vccOpts||e;for(const[n,o]of t)c[n]=o;return c},a={};function f(e,t){return s(),r("div",null,"index")}const d=_(a,[["render",f]]);export{d as default};
