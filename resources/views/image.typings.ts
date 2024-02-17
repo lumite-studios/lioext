@@ -7,4 +7,11 @@ export const messages: Array<string> = [
     'Patrolling Sub-Males',
     'Barking Hybrids',
     'Waiting for Jaglions',
+    'Gaining MORE Scars',
+    'Randomly Applying Markings',
+    'Demanding Mutations',
+    'Chasing Poachers',
+    'Balls',
+    'Lab Testing Frogs',
+    'Raising Impression',
 ]
