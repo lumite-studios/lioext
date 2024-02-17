@@ -2,9 +2,11 @@
     <div class="h-screen w-screen overflow-y-auto bg-surface-50 dark:bg-surface-800">
         <div class="h-header bg-primary-400">
             <div class="pt-6 text-center">
-                <h1 class="font-heading text-4xl text-white">
-                    LioExt
-                </h1>
+                <Link href="/">
+                    <h1 class="font-heading text-4xl text-white">
+                        LioExt
+                    </h1>
+                </Link>
             </div>
             <div class="px-3 md:px-6">
                 <Toolbar class="border-primary-600">
