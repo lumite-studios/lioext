@@ -1,0 +1,65 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:vue/vue3-recommended",
+        "plugin:tailwindcss/recommended",
+        "plugin:import/recommended",
+        "plugin:import/typescript"
+    ],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "ecmaVersion": 2021,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": "tsconfig.json",
+        "extraFileExtensions": [".vue"]
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "import"
+    ],
+    "root": true,
+    "ignorePatterns": ["vite.config.ts"],
+    "rules": {
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/ban-ts-comment": ["error", {
+            "ts-ignore": "allow-with-description"
+        }],
+        "@typescript-eslint/no-floating-promises": "off",
+        "import/no-unresolved": "error",
+        "node/no-missing-import": "off",
+        "semi": ["error", "never"],
+        "vue/html-indent": ["error", 4],
+        "vue/multi-word-component-names": ["off"],
+        "vue/no-v-html": ["off"],
+        "vue/no-v-text-v-html-on-component": ["off"]
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts"]
+        },
+        "node": true,
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        },
+        "tailwindcss": {
+            "cssFiles": [
+                "resources/**/*.scss"
+            ]
+        }
+    }
+}

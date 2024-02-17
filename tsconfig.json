@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "lib": ["dom", "esnext"],
+        "paths": {
+            "@/*": ["resources/*"],
+        },
+        "module": "esnext",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "esnext",
+        "types": [
+            "vite/client"
+        ]
+	},
+	"include": [
+        "resources/**/*.ts",
+        "resources/**/*.vue",
+    ]
+}
