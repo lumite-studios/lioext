@@ -1,0 +1,69 @@
+{
+  "node_modules/primeicons/fonts/primeicons.eot": {
+    "file": "assets/primeicons-Dk_eWBPK.eot",
+    "src": "node_modules/primeicons/fonts/primeicons.eot"
+  },
+  "node_modules/primeicons/fonts/primeicons.svg": {
+    "file": "assets/primeicons-BubJZjaf.svg",
+    "src": "node_modules/primeicons/fonts/primeicons.svg"
+  },
+  "node_modules/primeicons/fonts/primeicons.ttf": {
+    "file": "assets/primeicons-NDVQFXzF.ttf",
+    "src": "node_modules/primeicons/fonts/primeicons.ttf"
+  },
+  "node_modules/primeicons/fonts/primeicons.woff": {
+    "file": "assets/primeicons-CCFeZR6K.woff",
+    "src": "node_modules/primeicons/fonts/primeicons.woff"
+  },
+  "node_modules/primeicons/fonts/primeicons.woff2": {
+    "file": "assets/primeicons-DsZ1W7-Z.woff2",
+    "src": "node_modules/primeicons/fonts/primeicons.woff2"
+  },
+  "resources/scripts/app.ts": {
+    "file": "assets/app-Dtt03bQ2.js",
+    "src": "resources/scripts/app.ts",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/views/image.vue",
+      "resources/views/index.vue"
+    ],
+    "css": [
+      "assets/app-5cf9Xwtq.css",
+      "assets/app-bdVatJ6V.css"
+    ],
+    "assets": [
+      "assets/primeicons-Dk_eWBPK.eot",
+      "assets/primeicons-DsZ1W7-Z.woff2",
+      "assets/primeicons-CCFeZR6K.woff",
+      "assets/primeicons-NDVQFXzF.ttf",
+      "assets/primeicons-BubJZjaf.svg"
+    ]
+  },
+  "resources/styles/app.scss": {
+    "file": "assets/app-bdVatJ6V.css",
+    "src": "resources/styles/app.scss",
+    "isEntry": true
+  },
+  "resources/views/image.vue": {
+    "file": "assets/image-BuiiKq7v.js",
+    "src": "resources/views/image.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/scripts/app.ts"
+    ],
+    "css": [
+      "assets/app-bdVatJ6V.css"
+    ]
+  },
+  "resources/views/index.vue": {
+    "file": "assets/index-CnOlaV8o.js",
+    "src": "resources/views/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/scripts/app.ts"
+    ],
+    "css": [
+      "assets/app-bdVatJ6V.css"
+    ]
+  }
+}
