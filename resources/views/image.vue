@@ -77,7 +77,7 @@ import Button from 'primevue/button'
 import Checkbox from 'primevue/checkbox'
 import InputText from 'primevue/inputtext'
 import Message from 'primevue/message'
-import { messages } from './image.typings'
+import { messages } from '@/types/global'
 
 const props = defineProps({
     base64: {

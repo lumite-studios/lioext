@@ -5,7 +5,13 @@ import path from 'path'
 
 export default defineConfig({
     plugins: [
-        vue(),
+        vue({
+            template: {
+                transformAssetUrls: {
+                    includeAbsolute: false,
+                },
+            },
+        }),
         laravel({
             input: ['resources/styles/app.scss', 'resources/scripts/app.ts'],
         }),

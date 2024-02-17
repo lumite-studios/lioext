@@ -3,16 +3,14 @@
         <div class="h-header bg-primary-400">
             <div class="pt-6 text-center">
                 <Link href="/">
-                    <h1 class="font-heading text-4xl text-white">
-                        LioExt
-                    </h1>
+                    <Heading class="text-white" content="LioExt" level="1" />
                 </Link>
             </div>
             <div class="px-3 md:px-6">
                 <Toolbar class="border-primary-600">
                     <template #center>
                         <Link href="/image">
-                            <Button label="Generate Image" />
+                            <Button label="LioImage" />
                         </Link>
                     </template>
                 </Toolbar>
@@ -30,4 +28,5 @@
 import { Link } from '@inertiajs/vue3'
 import Button from 'primevue/button'
 import Toolbar from 'primevue/toolbar'
+import { Heading } from '@/components'
 </script>
