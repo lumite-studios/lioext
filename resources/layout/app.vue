@@ -21,6 +21,10 @@
                 <slot />
             </div>
         </div>
+        <div class="bg-surface-200 text-center p-3 md:p-6">
+            <a class="inline-block" href="https://www.lioden.com" target="_blank"><img class="w-20" src="https://static.lioden.com/img/layout/logo-full-2.png" /></a><br>
+            Website &copy; <a class="text-primary-500" href="https://lumitestudios.com" target="_blank">Lumite Studios</a>. Art assets including Lioden logo &copy; <a class="text-primary-500" href="https://www.lioden.com" target="_blank">Lioden</a>
+        </div>
     </div>
 </template>
 
