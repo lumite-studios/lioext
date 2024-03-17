@@ -48,9 +48,8 @@
                             <Checkbox
                                 v-model="form.cubs"
                                 :binary="true"
-                                :disabled="!form.decorations"
                             />
-                            <label :class="['block font-medium cursor-not-allowed', { 'opacity-50': !form.decorations }]">Include nursing cubs?</label>
+                            <label class="block font-medium">Include nursing cubs?</label>
                         </div>
                     </div>
                     <div class="flex items-center justify-center space-x-2">
@@ -141,7 +140,4 @@ const stopMessages = () => {
 }
 
 watch(props, () => image.value = props.base64)
-watch(form, () => {
-    if(form.decorations === false) form.cubs = false
-})
 </script>

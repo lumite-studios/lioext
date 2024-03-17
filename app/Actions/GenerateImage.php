@@ -54,13 +54,13 @@ class GenerateImage
                     return null;
                 }
 
-                // remove decors if needed
-                if(!$decorations && Str::contains($src, 'decors')) {
+                // remove cubs if needed
+                if(!$cubs && Str::contains($src, 'cubkitten')) {
                     return null;
                 }
 
-                // remove cubs if needed
-                if(!$cubs && Str::contains($src, 'cubkitten')) {
+                // remove decors if needed
+                if(!$decorations && Str::contains($src, 'decors') && !Str::contains($src, 'cubkitten')) {
                     return null;
                 }
 

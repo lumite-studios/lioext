@@ -20,7 +20,7 @@
     "src": "node_modules/primeicons/fonts/primeicons.woff2"
   },
   "resources/scripts/app.ts": {
-    "file": "assets/app-Dto4lW2s.js",
+    "file": "assets/app-BPgltXP_.js",
     "src": "resources/scripts/app.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -29,7 +29,7 @@
     ],
     "css": [
       "assets/app-5cf9Xwtq.css",
-      "assets/app-DDm179jP.css"
+      "assets/app-BNwYCOYk.css"
     ],
     "assets": [
       "assets/primeicons-Dk_eWBPK.eot",
@@ -40,30 +40,30 @@
     ]
   },
   "resources/styles/app.scss": {
-    "file": "assets/app-DDm179jP.css",
+    "file": "assets/app-BNwYCOYk.css",
     "src": "resources/styles/app.scss",
     "isEntry": true
   },
   "resources/views/image.vue": {
-    "file": "assets/image-CazQ-d3a.js",
+    "file": "assets/image-7Jbu5t19.js",
     "src": "resources/views/image.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/scripts/app.ts"
     ],
     "css": [
-      "assets/app-DDm179jP.css"
+      "assets/app-BNwYCOYk.css"
     ]
   },
   "resources/views/index.vue": {
-    "file": "assets/index-BOeUe10P.js",
+    "file": "assets/index-4xwUguiH.js",
     "src": "resources/views/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/scripts/app.ts"
     ],
     "css": [
-      "assets/app-DDm179jP.css"
+      "assets/app-BNwYCOYk.css"
     ]
   }
 }
