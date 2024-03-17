@@ -20,7 +20,7 @@
     "src": "node_modules/primeicons/fonts/primeicons.woff2"
   },
   "resources/scripts/app.ts": {
-    "file": "assets/app-BZ7BEI5L.js",
+    "file": "assets/app-Dto4lW2s.js",
     "src": "resources/scripts/app.ts",
     "isEntry": true,
     "dynamicImports": [
@@ -45,7 +45,7 @@
     "isEntry": true
   },
   "resources/views/image.vue": {
-    "file": "assets/image-BWc7kt6I.js",
+    "file": "assets/image-CazQ-d3a.js",
     "src": "resources/views/image.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -56,7 +56,7 @@
     ]
   },
   "resources/views/index.vue": {
-    "file": "assets/index-D7hbjVif.js",
+    "file": "assets/index-BOeUe10P.js",
     "src": "resources/views/index.vue",
     "isDynamicEntry": true,
     "imports": [
