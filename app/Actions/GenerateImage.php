@@ -1,12 +1,9 @@
 <?php
 namespace App\Actions;
 
-use Imagick;
-use Inertia\Inertia;
 use Illuminate\Support\Str;
 use Lorisleiva\Actions\ActionRequest;
 use Lorisleiva\Actions\Concerns\AsAction;
-use Illuminate\Validation\ValidationException;
 
 class GenerateImage
 {
@@ -28,6 +25,7 @@ class GenerateImage
 
     public function handle(array $data = [])
     {
+        $cubs = $data['cubs'] ?? false;
         $decorations = $data['decorations'] ?? false;
         $background = $data['background'] ?? false;
         $opacity = $data['opacity'] ?? false;
@@ -42,7 +40,7 @@ class GenerateImage
 
         // get the lion images
         $images = collect($dom->getElementsByTagName('img'))
-            ->transform(function ($image) use($background, $decorations, $opacity) {
+            ->transform(function ($image) use($background, $cubs, $decorations, $opacity) {
                 $src = $image->getAttribute('src');
                 $style = $image->getAttribute('style');
 
@@ -58,6 +56,11 @@ class GenerateImage
 
                 // remove decors if needed
                 if(!$decorations && Str::contains($src, 'decors')) {
+                    return null;
+                }
+
+                // remove cubs if needed
+                if(!$cubs && Str::contains($src, 'cubkitten')) {
                     return null;
                 }
 

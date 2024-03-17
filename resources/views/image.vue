@@ -30,15 +30,34 @@
                         type="text"
                     />
                     <div class="flex items-center justify-center space-x-2">
-                        <Checkbox v-model="form.background" :binary="true" />
+                        <Checkbox
+                            v-model="form.background"
+                            :binary="true"
+                        />
                         <label class="block font-medium">Include background?</label>
                     </div>
-                    <div class="flex items-center justify-center space-x-2">
-                        <Checkbox v-model="form.decorations" :binary="true" />
-                        <label class="block font-medium">Include decorations?</label>
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="flex items-center justify-center space-x-2">
+                            <Checkbox
+                                v-model="form.decorations"
+                                :binary="true"
+                            />
+                            <label class="block font-medium">Include decorations?</label>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <Checkbox
+                                v-model="form.cubs"
+                                :binary="true"
+                                :disabled="!form.decorations"
+                            />
+                            <label :class="['block font-medium cursor-not-allowed', { 'opacity-50': !form.decorations }]">Include nursing cubs?</label>
+                        </div>
                     </div>
                     <div class="flex items-center justify-center space-x-2">
-                        <Checkbox v-model="form.opacity" :binary="true" />
+                        <Checkbox
+                            v-model="form.opacity"
+                            :binary="true"
+                        />
                         <label class="block font-medium">Show at 100% opacity?</label>
                     </div>
                 </div>
@@ -56,16 +75,16 @@
         </div>
         <div class="flex items-center justify-center grow">
             <div
+                v-if="form.processing"
                 :class="[
                     'transition-all duration-500',
                     { 'opacity-0': message === null },
                     { 'opacity-50': message !== null }
                 ]"
-                v-if="form.processing"
             >
                 <span v-if="message !== null">{{ message }}...</span>
             </div>
-            <img :src="image" />
+            <img :src="image ?? ''">
         </div>
     </div>
 </template>
@@ -90,10 +109,11 @@ const form = useForm({
     url: 'https://www.lioden.com/lion.php?mid=96301',
     background: false,
     decorations: false,
+    cubs: false,
     opacity: false,
 })
 const image = ref<null|string>(props.base64)
-const message = ref<string>('')
+const message = ref<null|string>('')
 const timer = ref<null|number>(null)
 
 const generate = () => {
@@ -117,8 +137,11 @@ const flashMessage = () => {
     }, 200)
 }
 const stopMessages = () => {
-    clearInterval(timer.value)
+    clearInterval(timer.value ?? 0)
 }
 
 watch(props, () => image.value = props.base64)
+watch(form, () => {
+    if(form.decorations === false) form.cubs = false
+})
 </script>

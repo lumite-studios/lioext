@@ -1,8 +1,10 @@
+import { CheckboxContext, CheckboxProps } from 'primevue/checkbox'
+
 export default {
     root: {
         class: ['relative', 'inline-flex', 'align-bottom', 'w-6', 'h-6', 'cursor-pointer', 'select-none']
     },
-    box: ({ props, context }) => ({
+    box: ({ props, context }: { props: CheckboxProps, context: CheckboxContext }) => ({
         class: [
           // Alignment
           'flex',
