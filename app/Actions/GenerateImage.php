@@ -2,6 +2,7 @@
 namespace App\Actions;
 
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Log;
 use Lorisleiva\Actions\ActionRequest;
 use Lorisleiva\Actions\Concerns\AsAction;
 
@@ -97,6 +98,8 @@ class GenerateImage
 		imagepng($output);
 		$output_data = ob_get_contents();
 		ob_end_clean();
+
+        Log::info("Generated image for lion: {$data['url']}");
 
         return "data:image/png;base64," . base64_encode($output_data);
     }
