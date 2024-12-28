@@ -1,0 +1,8 @@
+/node_modules
+/storage/*.key
+/storage/pail
+/vendor
+.env
+.phpunit.result.cache
+npm-debug.log
+/.vscode

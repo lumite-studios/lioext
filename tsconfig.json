@@ -1,0 +1,22 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "resources/*"
+            ],
+        },
+        "types": [
+            "vite/client"
+        ]
+    },
+    "include": [
+        "resources/**/*.ts",
+        "resources/**/*.d.ts",
+        "resources/**/*.vue"
+    ],
+    "exclude": [
+        "vite.config.ts",
+    ]
+}
