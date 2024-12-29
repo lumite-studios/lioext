@@ -1,15 +1,15 @@
 <template>
-    <div class="bg-surface-200 text-center text-sm px-3 md:px-6">
+    <div class="text-center text-sm px-3 md:px-6">
         {{ 'Website &copy;' }}
         <XLinkExternal
-            class="text-primary-500"
+            class="text-primary-500 font-medium hover:text-primary-600"
             href="https://lumitestudios.com"
         >
             {{ 'Lumite Studios' }}
         </XLinkExternal>.
         {{ 'Art assets including Lioden logo &copy;' }}
         <XLinkExternal
-            class="text-primary-500"
+            class="text-primary-500 font-medium hover:text-primary-600"
             href="https://www.lioden.com"
         >
             {{ 'Lioden' }}

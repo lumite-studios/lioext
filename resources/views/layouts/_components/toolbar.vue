@@ -25,7 +25,7 @@
                     />
                 </XLinkInternal>
                 <XLinkInternal
-                    v-if="env === 'local'"
+                    v-if="$page.props.local"
                     href="/dev"
                 >
                     <PrimeButton
