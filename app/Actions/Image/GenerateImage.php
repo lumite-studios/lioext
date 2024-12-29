@@ -76,7 +76,19 @@ class GenerateImage extends Action
                 // force adult if needed
                 if ($forceAdultMale) {
                     if (Str::contains($src, '/lioness')) {
-                        $src = Str::replaceFirst('/lioness', '/lion', $src);
+                        if (Str::contains($src, 'good')) {
+                            $src = Str::replaceFirst('/lioness/good', '/lion', $src);
+                        } elseif (Str::contains($src, 'kind')) {
+                            $src = Str::replaceFirst('/lioness/kind', '/lion', $src);
+                        } elseif (Str::contains($src, 'neutral')) {
+                            $src = Str::replaceFirst('/lioness/neutral', '/lion', $src);
+                        } elseif (Str::contains($src, 'snarky')) {
+                            $src = Str::replaceFirst('/lioness/snarky', '/lion', $src);
+                        } elseif (Str::contains($src, 'evil')) {
+                            $src = Str::replaceFirst('/lioness/evil', '/lion', $src);
+                        } else {
+                            $src = Str::replaceFirst('/lioness', '/lion', $src);
+                        }
                     }
                     if (Str::contains($src, 'cubnewborn')) {
                         $src = Str::replaceFirst('cubnewborn', 'lion', $src);
